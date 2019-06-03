@@ -1,7 +1,7 @@
 // import express router and our controller
 const router = require('express').Router();
 const{
-  getAllWorkouts,
+  getAllWorkout,
   getWorkoutById,
   createWorkout,
   updateWorkout,
@@ -13,7 +13,7 @@ const{
 //Get and Post routes for /api/notes
 router 
   .route('/')
-  .get(getAllWorkouts)
+  .get(getAllWorkout)
   .post(createWorkout);
 
   //GET/PUT/Delete routes for api/notes/ :id
