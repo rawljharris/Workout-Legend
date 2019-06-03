@@ -1,6 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Jumbotron from '../components/Jumbotron';
+
+
+class Search extends Component {
+  state ={
+    exercises: [],
+    searchExercises: "",
+
+
+  };
+  handleFormSubmit = event => {
+    event.preventDefault();
+    if (!this.state.searchExercises) {
+      return alert("Search Another Exercise!");
+    }
+  }
+ 
+}
+
 
 function App() {
   return (
