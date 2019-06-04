@@ -1,12 +1,14 @@
 // import mongoose
 const mongoose = require('mongoose');
 
+//get schema constructor out of mongoose
+const { Schema } = mongoose;
 //get schema constructor out if mongoose
 const workoutSchema = new mongoose.Schema({
   workoutId: {
     type: String,
   },
-  Name: {
+  name: {
     type:String,
     required: true
   },
@@ -24,7 +26,11 @@ const workoutSchema = new mongoose.Schema({
   },
   equipment: {
     type: Array
+  },
+  link: {
+    type: String
   }
+
 
 });
 //create our model

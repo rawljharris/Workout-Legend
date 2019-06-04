@@ -10,13 +10,13 @@ const{
 
 //define routes
 
-//Get and Post routes for /api/notes
+//Get and Post routes for /api/workouts
 router 
   .route('/')
   .get(getAllWorkout)
   .post(createWorkout);
 
-  //GET/PUT/Delete routes for api/notes/ :id
+  //GET/PUT/Delete routes for api/workuts/ :id
   router  
     .route('/:id')
     .get(getWorkoutById)
