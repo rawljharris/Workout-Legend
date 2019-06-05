@@ -1,9 +1,11 @@
+const user= require('../models/user');
+
 //import workout model
 const { workout} = require('../models');
 
 //export a series of method for handling our routes
 
-//GEt all notes
+//GEt all workouts
 // /api/ workouts
 function getAllWorkout(req, res) {
   workout.find({})
@@ -24,7 +26,7 @@ function getWorkoutById(req, res) {
       res.status(500).json(err);
     });
 }
-//POST/ Create a new workout a
+//POST/ Create a new workout 
 function createWorkout(req, res) {
   workout.create(req.body)
     .then(dbWorkoutData => res.status(200).json(dbWorkoutData))

@@ -1,3 +1,4 @@
+//use this to collect All routes(api and HTML) and package them
 const router = require('express').Router();
 const path = require('path');
 const apiRoutes = require('./api');

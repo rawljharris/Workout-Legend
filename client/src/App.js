@@ -1,23 +1,8 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
 
 
-class Search extends Component {
-  state ={
-    exercises: [],
-    searchExercises: "",
 
-
-  };
-  handleFormSubmit = event => {
-    event.preventDefault();
-    if (!this.state.searchExercises) {
-      return alert("Search Another Exercise!");
-    }
-  }
- 
-}
 
 
 function App() {
