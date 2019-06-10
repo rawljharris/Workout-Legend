@@ -1,8 +1,7 @@
 // import mongoose
 const mongoose = require('mongoose');
 
-//get schema constructor out of mongoose
-const { Schema } = mongoose;
+
 //get schema constructor out if mongoose
 const workoutSchema = new mongoose.Schema({
   workoutId: {

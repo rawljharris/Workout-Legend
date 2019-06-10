@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 // todo: import bcrypt
 const bcrypt = require('bcrypt');
+const saltRounds = 10;
 
 
 //creating sub document forcmodelling workouts

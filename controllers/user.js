@@ -1,10 +1,10 @@
 // import dependecies
 const jwt = require('jsonwebtoken');
-const handle = require('');
+const handle = require('../utils/handle-promise');
 
-const { User } = require("../models/user");
+const  User  = require("../models/user");
 // secret for json web token 
-const secret = 'andrewstinks';
+const secret = 'mysecretsshhhhh';
 
 // function to create new user when the POST route '/api/user/register' is hit
 const register = (req, res) => {
@@ -12,21 +12,15 @@ const register = (req, res) => {
   // get information of user out of req.body
   const {
     email,
-    password,
-    firstName,
-    lastName
+    password
   } = req.body;
 
   // create a new user 
   const user = new User({
     email,
-    password,
-    firstName,
-    lastName
+    password
   });
 
-  //run setFullName()
-  user.setFullName();
 
   // create/save new user (will trigger password creation we need to set up User model)
   User.create(user)
@@ -98,7 +92,7 @@ const login = async (req, res) => {
         });
 
       // respond with web token to the front end
-      res.status(200).json(token);
+      res.cookie('token', token, {httpOnly: true}).status(200).json(token);
     }
   }
 }

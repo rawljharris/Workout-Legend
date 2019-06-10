@@ -1,7 +1,7 @@
-const user= require('../models/user');
+const user = require('../models/user');
 
 //import workout model
-const { workout} = require('../models');
+const { workout } = require('../models');
 
 //export a series of method for handling our routes
 
@@ -9,7 +9,7 @@ const { workout} = require('../models');
 // /api/ workouts
 function getAllWorkout(req, res) {
   workout.find({})
-    .then(dbWorkoutData => res.statues(200).json(dbWorkoutData))
+    .then(dbWorkoutData => res.status(200).json(dbWorkoutData))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
