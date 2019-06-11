@@ -41,7 +41,8 @@
 }
 
 .signIn {
-  background-blend-mode: normal
+  background-blend-mode: normal;
+  margin-top: 65px
   
 }
 .jumbotron{
@@ -53,16 +54,20 @@
   margin-top: auto;
   margin-bottom: auto;
   line-height: 25px;
-  min-height: 39vh;
+  min-height: 65vh;
   display: flex;
   align-items: center;
 } 
-.constainer {
-   color: white
+.container {
+   color: white;
+   margin-top: 50
 }
 .btn {
   border: 6px solid transparent;
   border-radius: 1rem;
   border: 0rem;
   margin: 2px
+}
+.text-muted{
+  color: aliceblue
 }

@@ -101,7 +101,7 @@ class App extends React.Component {
       
       <div style={this.state.backgroundStyles} className="">
         <Navbar bg="dark" variant="white">
-    <Navbar.Brand href="#home">Workout Legend</Navbar.Brand>
+    <Navbar.Brand href="#home"><i class="fas fa-home"></i>Workout Legend</Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="#home">Exercises</Nav.Link>
       <Nav.Link href="#features">Exercise Equipment</Nav.Link>

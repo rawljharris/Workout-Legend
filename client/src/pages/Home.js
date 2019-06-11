@@ -57,7 +57,7 @@ class Home extends Component {
 
       <div>
         <Jumbotron />
-        <h1>Exercise Info</h1>
+        <h1><i class="fas fa-dumbbell"></i>Get Exercise Info</h1>
         <div>
           <button className="btn btn-primary" onClick={this.handleGetWorkouts}>Get Workouts</button>
         </div>
