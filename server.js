@@ -12,9 +12,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 // if app is in production, then serve up client/build as static in express
-// if (process.env.NODE_ENV === 'production') {
-//   app.use(express.static("client/build"));
-// }
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static("client/build"));
+}
 
 app.use(routes);
 
