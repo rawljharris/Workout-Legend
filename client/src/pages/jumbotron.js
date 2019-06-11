@@ -4,12 +4,12 @@ const Jumbotron = () => {
   return( 
   <div>
     <div class="jumbotron jumbotron-fluid" 
-    style={{height: 500}}
-    style={{}}
+    style={{height: 400}}
+    style={{size: 300}}
     >
   <div class="container">
-    <h1 class="display-6" >Workout Legends</h1>
-    <p class="lead">.</p>
+    <h1 class="display-6" ></h1>
+    <p class="lead"></p>
   </div>
 </div>
 </div>

@@ -57,19 +57,23 @@ class Home extends Component {
 
       <div>
         <Jumbotron />
-        <h1>Workout Legends</h1>
+        <h1>Exercise Info</h1>
         <div>
           <button className="btn btn-primary" onClick={this.handleGetWorkouts}>Get Workouts</button>
         </div>
+
         <div>
           <button className="btn btn-primary" onClick={this.getExerciseEquipment}>Get Workout Equipment</button>
 
         </div>
+
         <div>        <button className="btn btn-primary" onClick={this.getExerciseMuscle}>Get Workout Muscle</button>
         </div>
 
+
         <div>        <button className="btn btn-primary" onClick={this.getExerciseImage}>Get Workout Images</button>
         </div>
+
         <div className="row justify-content-center">
           {this.state.workouts.length && this.state.activeTab === "workouts" ? (this.state.workouts.map(workout => (
             <div className="col-12 col-md-3" key={workout.id}>
@@ -123,7 +127,7 @@ class Home extends Component {
                   <Card.Text>
                     {image.name}
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="primary">See Workout</Button>
                 </Card.Body>
               </Card>
             </div>
